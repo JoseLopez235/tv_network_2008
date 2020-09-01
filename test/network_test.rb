@@ -13,6 +13,6 @@ class NetworkTest < Minitest::Test
   def test_should_return_class_attributes
     nbc = Network.new("NBC")
     assert_equal "NBC", nbc.name
-    assert_equal []. nbc.shows
+    assert_equal [], nbc.shows
   end
 end
