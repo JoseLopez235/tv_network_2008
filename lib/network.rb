@@ -21,4 +21,18 @@ class Network
     end
     main_characters
   end
+
+  def actors_by_show
+    shows_hash = {}
+    @shows.each do |show|
+      show.characters.each do |character|
+        if shows_hash[show.name].nil?
+          shows_hash[show.name] = [character.actor]
+        else
+          shows_hash[show.name] << character.actor
+        end
+      end
+    end
+    shows_hash
+  end
 end
