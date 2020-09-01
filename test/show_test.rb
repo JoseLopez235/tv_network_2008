@@ -35,7 +35,7 @@ class ShowTest < Minitest::Test
   end
 
   def test_should_return_all_actors
-    kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
+    kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 7_000_000})
     michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
     knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
     assert_equal ["David Hasselhoff", "William Daniels"], knight_rider.actors
