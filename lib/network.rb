@@ -34,5 +34,4 @@ class Network
       end
     end
     shows_hash
-  end
-end
+  end   
